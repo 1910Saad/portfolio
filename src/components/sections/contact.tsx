@@ -29,6 +29,14 @@ export function ContactSection() {
               <MapPin size={18} className="text-sky-600 dark:text-sky-300" />
               <span>{profile.location}</span>
             </div>
+            <div className="pt-2">
+              <a
+                href={`mailto:${profile.email}`}
+                className="inline-flex items-center rounded-full bg-sky-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-700"
+              >
+                Email for opportunities
+              </a>
+            </div>
           </div>
         </div>
 

@@ -51,6 +51,11 @@ export function HeroSection() {
               <Link href="#contact">Let&apos;s connect</Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
+              <Link href="/resume.txt" target="_blank" rel="noreferrer">
+                Download resume
+              </Link>
+            </Button>
+            <Button asChild variant="secondary" size="lg">
               <Link href={profile.socials.linkedin} target="_blank" rel="noreferrer">
                 LinkedIn profile
               </Link>
