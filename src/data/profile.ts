@@ -56,6 +56,40 @@ export const profile = {
       stack: ["React.js", "Node.js", "PostgreSQL", "MySQL", "JWT", "REST APIs"],
     },
   ],
+  education: [
+    {
+      title: "Bachelor of Engineering – Computer Engineering",
+      institution: "Anjuman-I-Islam’s Kalsekar Technical Campus (AIKTC), University of Mumbai",
+      period: "2022 – 2026",
+      note: "CGPA: 7.77 | Coursework: DSA, OOP, DBMS, Operating Systems, Computer Networks, Software Engineering.",
+    },
+    {
+      title: "Higher Secondary Certificate (HSC) – Science",
+      institution: "Fatima Jr. College, Maharashtra State Board",
+      period: "2022",
+      note: "58.67%",
+    },
+    {
+      title: "Secondary School Certificate (SSC)",
+      institution: "S.I.C.E.S. High School, Maharashtra State Board",
+      period: "2020",
+      note: "82.40%",
+    },
+  ],
+  research: {
+    title: "EVUA: AI-Assisted Legacy Code Migration Using Large Language Models",
+    description:
+      "Published in the International Journal of Computer Science and Technology (IJCST) in 2026, highlighting the use of LLMs for automated legacy code modernization.",
+  },
+  achievements: [
+    "Best Presenter – Internal Smart India Hackathon (2025)",
+    "Participant – Smart India Hackathon (2022, 2023)",
+    "Build Real World AI Apps with Gemini & Imagen – Google",
+    "Prompt Design in Vertex AI – Google",
+    "Tata Data Visualisation – Forage (2025)",
+    "AI Fundamentals – IBM",
+    "Python Programming – MKCL (2025)",
+  ],
   socials: {
     linkedin: "https://linkedin.com/in/saad-khan-a74867293",
     github: "https://github.com/1910Saad",
