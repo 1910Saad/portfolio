@@ -51,7 +51,7 @@ export function HeroSection() {
               <Link href="#contact">Let&apos;s connect</Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <Link href="/resume" target="_blank" rel="noreferrer">
+              <Link href="/Saad_Khan.pdf" target="_blank" rel="noreferrer">
                 Download resume
               </Link>
             </Button>
