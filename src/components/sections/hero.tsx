@@ -34,7 +34,7 @@ export function HeroSection() {
               transition={{ duration: 0.55, delay: 0.05 }}
               className="max-w-2xl text-4xl font-semibold tracking-tight text-white md:text-6xl"
             >
-              I design and ship digital experiences that feel human.
+              I build backend systems and AI-powered software that ship.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 12 }}
@@ -92,11 +92,11 @@ export function HeroSection() {
           <div className="grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl bg-sky-400/10 p-4 text-slate-50">
               <p className="text-xs uppercase tracking-[0.3em] text-sky-200">Focus</p>
-              <p className="mt-2 text-lg font-semibold">Design systems and scalable product UX</p>
+              <p className="mt-2 text-lg font-semibold">Backend architecture, API design, and applied AI</p>
             </div>
             <div className="rounded-2xl bg-pink-400/10 p-4 text-slate-50">
               <p className="text-xs uppercase tracking-[0.3em] text-pink-200">Stack</p>
-              <p className="mt-2 text-lg font-semibold">Next.js, TypeScript, Tailwind, Framer Motion</p>
+              <p className="mt-2 text-lg font-semibold">ReactJS, Node.js, MongoDB, PostgreSQL, Next.js, LLMs API</p>
             </div>
           </div>
           <div className="rounded-2xl border border-dashed border-white/15 p-4 text-sm text-slate-300">
