@@ -10,7 +10,12 @@ export function ContactForm() {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+
+    // Capture the form element now — event.currentTarget becomes null
+    // after the first `await`, since React clears it once the event
+    // has finished dispatching.
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const payload = {
       name: String(formData.get("name") || ""),
       email: String(formData.get("email") || ""),
@@ -34,7 +39,7 @@ export function ContactForm() {
 
       setStatus("success");
       setMessage("Thanks for reaching out — your message has been sent.");
-      event.currentTarget.reset();
+      form.reset();
     } catch (error) {
       setStatus("error");
       setMessage(error instanceof Error ? error.message : "Unable to send your message.");
