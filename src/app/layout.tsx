@@ -1,20 +1,32 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Portfolio | Khan Saad Alikhan",
-  description: "A professional portfolio for Khan Saad Alikhan, showcasing software development experience and project work.",
+  title: "Saad Khan | Developer & Freelancer",
+  description:
+    "Personal portfolio of Saad Khan — web developer and freelancer building modern, responsive websites and web applications.",
+  applicationName: "Saad Khan Portfolio",
+  keywords: [
+    "Saad Khan",
+    "Web Developer",
+    "Freelancer",
+    "Next.js Developer",
+    "React Developer",
+    "Website Development",
+  ],
+  openGraph: {
+    title: "Saad Khan | Developer & Freelancer",
+    description:
+      "Building modern websites and digital experiences for businesses.",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#09090d",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -23,11 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,21 +1,28 @@
-import { ContactSection } from "@/components/sections/contact";
-import { EducationSection } from "@/components/sections/education";
-import { ExperienceSection } from "@/components/sections/experience";
-import { FooterSection } from "@/components/sections/footer";
-import { HeroSection } from "@/components/sections/hero";
-import { ProjectsSection } from "@/components/sections/projects";
-import { ResearchSection } from "@/components/sections/research";
+
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-6 md:px-6 lg:py-10">
-      <HeroSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <EducationSection />
-      <ResearchSection />
-      <ContactSection />
-      <FooterSection />
-    </main>
+    <>
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Services />
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
   );
 }
