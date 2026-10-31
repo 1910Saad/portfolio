@@ -2,10 +2,15 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight, Download } from "lucide-react";
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
+
+  const links = {
+    github: "https://github.com/1910Saad",
+    linkedin: "https://www.linkedin.com/in/saad-khan-a74867293/",
+  };
 
   return (
     <section
@@ -24,26 +29,29 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="max-w-4xl"
         >
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/[0.07] px-4 py-2 text-sm text-violet-300">
+          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/[0.07] px-4 py-2 text-sm text-violet-200">
             <span className="h-2 w-2 rounded-full bg-violet-400" />
-            Web Developer &amp; Freelancer
+            Full Stack Developer · Computer Engineering Graduate
           </div>
 
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-400">
             Hello, welcome to my portfolio
           </p>
 
-          <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight sm:text-6xl md:text-8xl">
-            I build websites
+          <h1 className="text-5xl font-semibold leading-[1.06] tracking-tight sm:text-6xl md:text-8xl">
+            I build digital
             <br />
-            that make an{" "}
-            <span className="gradient-text">impact.</span>
+            experiences that
+            <br />
+            <span className="gradient-text">
+              solve real problems.
+            </span>
           </h1>
 
           <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
-            I&apos;m Saad Khan, a developer passionate about building modern
-            websites and web applications that help businesses grow and
-            deliver better digital experiences.
+            I create modern web applications and thoughtful digital experiences
+            for people, businesses, and products—from the first idea to a
+            working deployment.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -60,15 +68,24 @@ export default function Hero() {
             >
               Get in Touch
             </a>
+            <a
+              href="/Saad_Khan.pdf"
+              download
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3.5 text-sm font-medium text-zinc-300 transition hover:border-white/25 hover:text-white"
+            >
+              <Download size={16} />
+              Resume
+            </a>
           </div>
 
           <div className="mt-12 flex items-center gap-5">
             <span className="text-sm text-zinc-500">Find me on</span>
 
+            {/* GitHub */}
             <a
-              href="https://github.com/"
+              href="https://github.com/1910Saad"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="text-zinc-400 transition hover:text-white"
             >
@@ -86,10 +103,11 @@ export default function Hero() {
               </svg>
             </a>
 
+            {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/saad-khan-a74867293/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="text-zinc-400 transition hover:text-white"
             >
@@ -101,7 +119,9 @@ export default function Hero() {
                 fill="currentColor"
                 aria-hidden="true"
               >
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM7.119 20.452H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z" />
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM7.119 20.452H3.555V9h3.564v11.452H7.119ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"
+                />
               </svg>
             </a>
           </div>

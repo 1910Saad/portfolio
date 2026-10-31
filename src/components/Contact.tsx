@@ -8,13 +8,13 @@ import {
     MessageCircle,
 } from "lucide-react";
 
-const EMAIL = "khansaad191004@example.com";
+const EMAIL = "khansaad191004@gmail.com";
 // const WHATSAPP_NUMBER = "91XXXXXXXXXX";
 const LINKEDIN_URL = "https://www.linkedin.com/in/saad-khan-a74867293/";
 
-const emailIsConfigured = !EMAIL.includes("YOUR_EMAIL");
+const emailIsConfigured = !EMAIL.includes("example.com");
 // const whatsappIsConfigured = !WHATSAPP_NUMBER.includes("X");
-const linkedinIsConfigured = !LINKEDIN_URL.includes("YOUR-PROFILE");
+const linkedinIsConfigured = true;
 
 const contactOptions = [
     {

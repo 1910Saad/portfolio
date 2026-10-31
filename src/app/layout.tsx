@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Saad Khan | Developer & Freelancer",
+    default: "Saad Khan | Full Stack Developer",
     template: "%s | Saad Khan",
   },
 
   description:
-    "Explore the portfolio of Saad Khan, a web developer and freelancer building modern, responsive websites and web applications for businesses.",
+    "Saad Khan is a Full Stack Developer building modern web applications, AI-powered tools, and digital products.",
 
   applicationName: "Saad Khan Portfolio",
 
@@ -29,7 +29,6 @@ export const metadata: Metadata = {
   ],
 
   authors: [{ name: "Saad Khan" }],
-
   creator: "Saad Khan",
 
   alternates: {
@@ -38,9 +37,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "/",
-    siteName: "Saad Khan | Developer & Freelancer",
-    title: "Saad Khan | Developer & Freelancer",
+    url: siteUrl,
+    siteName: "Saad Khan Portfolio",
+    title: "Saad Khan | Full Stack Developer",
     description:
       "Modern websites and web applications built with thoughtful design and reliable technology.",
     images: [
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Saad Khan — Developer and Freelancer",
+        alt: "Saad Khan — Full Stack Developer and Freelancer",
       },
     ],
   },

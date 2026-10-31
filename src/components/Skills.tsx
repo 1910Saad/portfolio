@@ -13,17 +13,18 @@ const skillGroups = [
   {
     title: "Styling & UI",
     description: "Creating polished and consistent visual experiences.",
-    skills: ["Tailwind CSS", "Responsive Design", "Framer Motion"],
+    skills: [
+      "Tailwind CSS", "Responsive Design", "Framer Motion", "Accessibility",],
   },
-  {
-    title: "Backend & Database",
+{
+  title: "Backend & Database",
     description: "Developing application logic and data-driven features.",
-    skills: ["Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB"],
+      skills: ["Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB", "Neon", "Drizzle ORM",],
   },
-  {
-    title: "Tools & Platforms",
+{
+  title: "Tools & Platforms",
     description: "Building, managing, and deploying projects.",
-    skills: ["Git", "GitHub", "Vercel", "REST APIs", "Drizzle ORM"],
+      skills: ["Git", "GitHub", "Vercel", "REST APIs", "Clerk", "Gemini API",],
   },
 ];
 

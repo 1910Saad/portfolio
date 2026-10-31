@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
@@ -7,6 +6,33 @@ import { ArrowUpRight, ExternalLink } from "lucide-react";
 const projects = [
     {
         number: "01",
+        title: "VelFile",
+        category: "File Conversion Platform",
+        description:
+            "A web-based file utility platform focused on making everyday file conversion and document workflows easy to access.",
+        technologies: ["Next.js", "TypeScript", "Web Platform"],
+        liveUrl: "https://velfile.in",
+        codeUrl: "",
+        visual: "from-cyan-900/40 via-sky-950/20 to-zinc-950",
+        accent: "text-cyan-300",
+        status: "Live Product",
+    },
+    {
+        number: "02",
+        title: "LaunchPilot AI",
+        category: "SaaS Product",
+        description:
+            "A startup idea discovery and validation workspace designed to help makers explore opportunities and assess product concepts.",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+        liveUrl: "",
+        codeUrl: "https://github.com/1910Saad/launchpilot-ai",
+        visual: "from-violet-900/40 via-indigo-950/20 to-zinc-950",
+        accent: "text-violet-300",
+        status: "In Development",
+    },
+    {
+
+        number: "03",
         title: "Brew & Bean",
         category: "Business Website",
         description:
@@ -19,7 +45,7 @@ const projects = [
         status: "Live Demo",
     },
     {
-        number: "02",
+        number: "04",
         title: "Haviva Salon & Spa",
         category: "Website Redesign Concept",
         description:
@@ -32,7 +58,7 @@ const projects = [
         status: "Redesign Concept",
     },
     {
-        number: "03",
+        number: "05",
         title: "CourseCraft",
         category: "AI-Powered E-Learning",
         description:
@@ -45,7 +71,7 @@ const projects = [
         status: "Project",
     },
     {
-        number: "04",
+        number: "06",
         title: "JobTrack AI",
         category: "Productivity Web App",
         description:
@@ -57,6 +83,19 @@ const projects = [
         accent: "text-emerald-300",
         status: "Project",
     },
+    // {
+    //     number: "07",
+    //     title: "EVUA",
+    //     category: "AI-Assisted Code Modernization",
+    //     description:
+    //         "A final-year project exploring AI-assisted legacy code upgrade workflows using language-aware tools and code analysis.",
+    //     technologies: ["Python", "LibCST", "Babel", "Spoon"],
+    //     liveUrl: "",
+    //     codeUrl: "",
+    //     visual: "from-rose-900/40 via-fuchsia-950/20 to-zinc-950",
+    //     accent: "text-rose-300",
+    //     status: "Final Year Project",
+    // },
 ];
 
 export default function Projects() {
@@ -124,7 +163,7 @@ export default function Projects() {
                                     </h3>
 
                                     <p className="mt-4 text-xs text-zinc-400">
-                                        {project.number} / 04
+                                        {project.number} / 06
                                     </p>
                                 </div>
 
